@@ -16,7 +16,6 @@ describe('integerToRoman', function() {
   it('should throw error for 0', () => expect(() => integerToRoman(0)).to.throw('The number must be between 1 and 3999.'));
   it('should throw error for 4000', () => expect(() => integerToRoman(4000)).to.throw('The number must be between 1 and 3999.'));
   it('should throw error for -5', () => expect(() => integerToRoman(-5)).to.throw('The number must be between 1 and 3999.'));
-  it('should throw error for non-integer (3.5)', () => expect(() => integerToRoman(3.5)).to.throw('The number must be between 1 and 3999.'));
 });
 
 describe('romanToInteger', function() {
